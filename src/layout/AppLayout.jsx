@@ -1,6 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Warning from "../components/Warning.jsx";
+import NavBar from "../components/NavBar.jsx";
+
 const AppLayout = () => {
   return (
     <div>
@@ -8,8 +10,8 @@ const AppLayout = () => {
         <Warning />
       </div> */}
 
-      <div>
-        <h1>Nav Bar section</h1>
+      <div className="mx-10 mt-4">
+        <NavBar />
       </div>
 
       <div className="mt-4 mx-2 sm:mx-20 ">

@@ -1,73 +1,70 @@
 import {
-  LifebuoyIcon,
-  MagnifyingGlassCircleIcon,
-  ReceiptPercentIcon,
+  AdjustmentsVerticalIcon,
+  ArrowDownCircleIcon,
+  BellAlertIcon,
+  ChevronDownIcon,
   ShoppingBagIcon,
+  TruckIcon,
   UserIcon,
 } from "@heroicons/react/24/outline";
 
+export const OtherMenuDataWeb = [
+  {
+    label: "Notification",
+    icon: <BellAlertIcon />,
+    href: "/login",
+    isNew: false,
+    menuType: "Login",
+  },
+  {
+    label: "Download",
+    icon: <ArrowDownCircleIcon />,
+    href: "/login",
+    isNew: false,
+    menuType: "Download",
+  },
+  {
+    label: "Download",
+    icon: <ArrowDownCircleIcon />,
+    href: "/login",
+    isNew: false,
+    menuType: "Download",
+  },
+  {
+    label: "Download",
+    icon: <ArrowDownCircleIcon />,
+    href: "/login",
+    isNew: false,
+    menuType: "Download",
+  },
+];
 export const NavigationDataWeb = [
   {
-    label: "Search",
-    icon: <MagnifyingGlassCircleIcon />,
-    href: "/foodsearch",
-    isNew: false,
-  },
-  {
-    label: "Offers",
-    icon: <ReceiptPercentIcon />,
-    href: "/offers",
-    isNew: true,
-  },
-  {
-    label: "Help",
-    icon: <LifebuoyIcon />,
-    href: "/help",
-    isNew: false,
-  },
-  {
-    label: "Sign In",
+    label: "Login",
     icon: <UserIcon />,
-    href: "/signin",
+    href: "/login",
     isNew: false,
+    menuType: "Login",
   },
   {
     label: "Cart",
-    icon: <ShoppingBagIcon />,
-    href: "/cart",
-    isNew: false,
-  },
-];
-
-export const NavigationDataMobile = [
-  {
-    label: "Swiggy",
-    icon: "",
-    href: "/",
-    isNew: false,
-  },
-  {
-    label: "Food",
-    icon: "",
-    href: "/foodsearch",
+    icon: <TruckIcon />,
+    href: "/offers",
     isNew: true,
+    menuType: "Cart",
   },
   {
-    label: "Instamart",
-    icon: "",
-    href: "/instamart",
+    label: "Become a Seller",
+    icon: <ShoppingBagIcon />,
+    href: "/seller",
     isNew: false,
+    menuType: "Become a Seller",
   },
   {
-    label: "Search",
-    icon: "",
-    href: "/foodsearch",
+    label: "",
+    icon: <AdjustmentsVerticalIcon />,
+    href: "",
     isNew: false,
-  },
-  {
-    label: "Account",
-    icon: "",
-    href: "/account",
-    isNew: false,
+    menuType: "Other",
   },
 ];
